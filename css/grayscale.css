@@ -216,6 +216,9 @@
   background-blend-mode: darken;
 }
 
+
+
+
 .signup-section {
   padding: 10rem 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-signup.jpg");
@@ -295,6 +298,10 @@ a {
 a:focus, a:hover {
   text-decoration: none;
   color: #3c6360;
+}
+
+h6 {
+  font-size: 75%;
 }
 
 .bg-black {
