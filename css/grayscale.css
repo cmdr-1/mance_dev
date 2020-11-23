@@ -176,7 +176,7 @@ canvas {
 }
 
 .about-section p {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
 }
 
 .projects-section {
@@ -213,12 +213,16 @@ canvas {
 .signup-section {
   padding: 10rem 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(22, 22, 22, 0.1)), color-stop(75%, rgba(22, 22, 22, 0.5)), to(#161616)), url("../img/bg-signup.jpg");
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/water.jpg");
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.1) 0%, rgba(22, 22, 22, 0.5) 75%, #161616 100%), url("../img/dark-water.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 
+}
+
+.signup-section p {
+  font-size: 1.3rem;
 }
 
 .signup-section .form-inline input {
@@ -227,7 +231,7 @@ canvas {
   padding: 1.25rem 2rem;
   height: auto;
   font-family: 'Varela Round';
-  font-size: 80%;
+  font-size: 100%;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   border: 0;
@@ -330,6 +334,9 @@ $tx: 1em;
 
 html { overflow: hidden; background: #000 }
 
+#journal {
+  margin-top: 4rem;
+}
 .item {
 	position: absolute;
 	top: 50%; left: 50%;
@@ -340,6 +347,10 @@ html { overflow: hidden; background: #000 }
 	transform: var(--pos) rotate(0deg) translate($tx);
 	box-shadow: inset 0 0 5px 2px hsl(calc(var(--k)*360), 100%, 75%);
 	animation: a $t linear calc(var(--i)*#{-$t}) infinite
+}
+
+#projects .row {
+  min-height: 400px;
 }
 
 @keyframes a { to { transform: var(--pos) rotate(1turn) translate($tx) } }
