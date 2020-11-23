@@ -180,7 +180,7 @@ canvas {
 }
 
 .projects-section {
-  padding: 10rem 0;
+  padding: 1rem 0 5rem 0;
 }
 
 .projects-section .featured-text {
@@ -351,6 +351,10 @@ html { overflow: hidden; background: #000 }
 
 #projects .row {
   min-height: 400px;
+}
+
+#projects h1 {
+  margin-bottom: 3rem;
 }
 
 @keyframes a { to { transform: var(--pos) rotate(1turn) translate($tx) } }
